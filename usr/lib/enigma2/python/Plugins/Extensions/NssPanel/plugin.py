@@ -335,11 +335,12 @@ class ListaFile(Screen):
            }
     </convert>
     </widget>
-    <ePixmap position="136,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
-    <ePixmap position="422,532" size="32,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" alphatest="on" />
+
     <widget source="conn" render="Label" position="125,582" size="930,70" font="Regular;30" halign="center" valign="center" transparent="1" />
-    <widget name="key_red" position="169,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
-    <widget name="key_green" position="453,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <ePixmap position="116,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
+    <ePixmap position="342,532" size="32,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" alphatest="on" />
+    <widget name="key_red" position="147,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <widget name="key_green" position="373,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
     </screen>
     '''
     
@@ -388,11 +389,13 @@ class DownloadFile(Screen):
         }
     </convert>
     </widget>
-    <ePixmap position="136,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
-    <ePixmap position="422,532" size="32,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" alphatest="on" />
+
     <widget source="conn" render="Label" position="125,582" size="930,70" font="Regular;30" halign="center" valign="center" transparent="1" />
-    <widget name="key_red" position="169,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
-    <widget name="key_green" position="453,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    
+    <ePixmap position="116,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
+    <ePixmap position="342,532" size="32,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" alphatest="on" />
+    <widget name="key_red" position="147,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <widget name="key_green" position="373,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
     </screen>
     '''    
     
@@ -536,12 +539,15 @@ class ManualInstall(Screen):
     </convert>
     </widget>
     <widget source="conn" render="Label" position="125,582" size="930,70" font="Regular;30" halign="center" valign="center" transparent="1" />
-    <ePixmap position="136,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
-    <ePixmap position="422,532" size="32,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" alphatest="on" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_yellow.png" position="677,532" size="34,47" alphatest="on" />
-    <widget name="key_red" position="177,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
-    <widget name="key_green" position="453,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
-    <widget name="key_yellow" position="715,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#00a08500" transparent="1" />
+    <ePixmap position="116,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
+    <ePixmap position="342,532" size="32,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" alphatest="on" />
+    <ePixmap position="572,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_yellow.png" alphatest="on" />
+    <ePixmap position="807,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_blue.png" alphatest="on" />
+    <widget name="key_red" position="147,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <widget name="key_green" position="373,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <widget name="key_yellow" position="605,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#00a08500" transparent="1" />
+    <widget name="key_blue" position="835,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#00a08500" transparent="1" />
+    
     </screen>
     '''
     
@@ -553,12 +559,15 @@ class ManualInstall(Screen):
         self['key_red'] = Label(_('Cancel'))
         self['key_yellow'] = Label(_('Reload /tmp'))
         self['key_green'] = Label(_('Restart E2'))
+        self['key_blue'] = Label(_('Remove'))
+        
         self.container = eConsoleAppContainer()
         self.container.appClosed.append(self.runFinished)
         self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'ok': self.KeyOk,
          'yellow': self.readTmp,
          'red': self.cancel,
          'back': self.cancel,
+         'blue':self.clean,
          'green': self.restartE2})
         self.onLayoutFinish.append(self.readTmp)
 
@@ -586,6 +595,35 @@ class ManualInstall(Screen):
                 box.setTitle(_('Install Addon'))
             else:
                 self.close()
+                
+    def clean(self):
+        if not self.container.running():
+            if len(loadtmpdir.tmp_list) > 0:
+                self.sel = self['list'].getIndex()
+                for p in loadtmpdir.tmp_list:
+                    if p[0] == self.sel:
+                        u.filename = p[1]
+
+                msg = _('Do you want remove:\n%s?') % u.filename
+                box = self.session.openWithCallback(self.removeAddons, MessageBox, msg, MessageBox.TYPE_YESNO)
+                box.setTitle(_('Remove - Clean /tmp'))
+            else:
+                self.close()                
+                
+    def removeAddons(self, answer):
+        if answer is True:  
+            if u.filename.find('.ipk') != -1 or u.filename.find('.tar.gz') != -1 or u.filename.find('.tgz') != -1 or u.filename.find('.tar') != -1 or u.filename.find('.zip') != -1:
+                dest = '/tmp/' + u.filename
+                mydir = getcwd()
+                cmd = 'rm -f ' + dest
+                self.session.open(Console, title='Remove - Clean /tmp', cmdlist=[cmd])
+                chdir(mydir)            
+                self['conn'].text = _('File: %s\nremoved succesfully!') % u.filename
+                self.readTmp()
+        
+            else:
+                self['conn'].text = _('File: %s\nis not a valid package!') % u.filename
+        
 
     def installAddons(self, answer):
         if answer is True:
@@ -677,8 +715,8 @@ class RemoveAddons(Screen):
         </convert>
     </widget>
     <widget source="conn" render="Label" position="125,582" size="930,70" font="Regular;30" halign="center" valign="center" transparent="1" />
-    <ePixmap position="136,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
-    <widget name="key_red" position="177,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <ePixmap position="116,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
+    <widget name="key_red" position="147,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
     </screen>
     '''
     
@@ -967,8 +1005,8 @@ class ScriptExecuter(Screen):
     </widget>
     
     <widget name="labstatus" position="136,582" size="895,48" font="Regular;30" valign="center" noWrap="1" backgroundColor="#333f3f3f" foregroundColor="#FFC000" shadowOffset="-2,-2" shadowColor="black" transparent="1" />
-    <ePixmap position="136,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
-    <widget name="key_red" position="177,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
+    <ePixmap position="116,532" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" alphatest="on" />
+    <widget name="key_red" position="147,535" zPosition="1" size="209,40" font="Regular;30" halign="center" valign="center" backgroundColor="#009f1313" transparent="1" />
     </screen>
     '''
     

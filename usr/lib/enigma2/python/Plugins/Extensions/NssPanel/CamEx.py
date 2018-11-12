@@ -95,10 +95,10 @@ class NSSCamsManager(Screen):
         skin = '''
         <screen name="NSSCamsManager" position="center,center" size="1280,720" title="" flags="wfNoBorder">
         <widget name="list" position="125,80" size="905,448" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-        <ePixmap name="red" position="136,532" zPosition="2" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" transparent="1" alphatest="on" />
-        <ePixmap name="green" position="422,532" zPosition="2" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" transparent="1" alphatest="on" />
-        <widget name="key_red" position="177,535" size="209,40" valign="center" halign="center" zPosition="4" foregroundColor="white" font="Regular;30" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
-        <widget name="key_green" position="453,535" size="209,40" valign="center" halign="center" zPosition="4" foregroundColor="white" font="Regular;30" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
+        <ePixmap name="red" position="116,532" zPosition="2" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_red.png" transparent="1" alphatest="on" />
+        <ePixmap name="green" position="342,532" zPosition="2" size="34,47" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NssPanel/buttons/key_green.png" transparent="1" alphatest="on" />
+        <widget name="key_red" position="147,535" size="209,40" valign="center" halign="center" zPosition="4" foregroundColor="white" font="Regular;30" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
+        <widget name="key_green" position="373,535" size="209,40" valign="center" halign="center" zPosition="4" foregroundColor="white" font="Regular;30" transparent="1" shadowColor="#25062748" shadowOffset="-2,-2" />
         </screen>
         '''
         
